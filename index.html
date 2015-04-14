@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app='uiRouterApp'>
+<head>
+  <title>UI Router Tutorial</title>
+</head>
+<body>
+  <div ui-view='header'></div>
+  <div ui-view='content'></div>
+  <div ui-view='footer'></div>
+
+
+
+  <!-- Lib -->
+  <script src='assets/lib/underscore/underscore-min.js'></script>
+
+  <!-- Angular modules -->
+  <script src='assets/lib/angular/angular.min.js'></script>
+  <script src='assets/lib/angular-ui-router/release/angular-ui-router.min.js'></script>
+
+  <!-- App -->
+  <script src="app/app.module.js"></script>
+  <script src="app/app.routes.js"></script>
+
+  <!-- Shared -->
+  <script src="app/shared/header/headerController.js"></script>
+
+  <!-- Home -->
+  <script src="app/components/home/homeController.js"></script>
+
+  <!-- Shows -->
+  <script src="app/components/shows/showsController.js"></script>  
+  <script src="app/components/shows/showsService.js"></script>
+  
+  <script src="app/components/shows/detail/showsDetailController.js"></script> 
+
+  <!-- Dashboard -->
+  <script src="app/components/dashboard/dashboardController.js"></script> 
+
+  <!-- Campaigns -->
+  <script src="app/components/campaigns/campaignsController.js"></script> 
+
+  <!-- Subscribers -->
+  <script src="app/components/subscribers/subscribersController.js"></script> 
+  <script src="app/components/subscribers/detail/subscribersDetailController.js"></script> 
+
+
+</body>
+</html>
